@@ -1,37 +1,37 @@
 public class SmartTv {
   
-    boolean ligada = false;
-    int canal = 1;
+    boolean on = false;
+    int channel = 1;
     int volume = 25;
 
-    public void ligar(){
-      ligada = true;
+    public void on(){
+      on = true;
     }
 
-    public void aumentarVolume(){
+    public void increaseVolume(){
       System.out.println("Aumentando o volume para: " + volume);
       volume ++;
     }
 
-    public void diminuirVolume(){
+    public void decreaseVolume(){
       System.out.println("Diminuindo o volume para: " + volume);
       volume --;
     }
   
-    public void aumentarCanal() {    
-      canal ++;
+    public void increaseChannel() {    
+      channel ++;
     }
 
-    public void diminuirCanal() {
-      canal --;
+    public void decreaseChannel() {
+      channel --;
     }
 
-    public void mudarCanal(int novoCanal){
-      canal = novoCanal;
+    public void changeChannel(int newChannel){
+      channel = newChannel;
     }
 
-    public void desligar(){
-      ligada = false;
+    public void turnOff(){
+      on = false;
     }
 
 }
