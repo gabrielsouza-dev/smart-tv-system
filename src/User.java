@@ -4,7 +4,7 @@ public class User {
 
       System.out.println("TV on? " + smartTv.on);
       System.out.println("Current channel: " + smartTv.channel);
-      System.out.println("Volume atual: " + smartTv.volume);
+      System.out.println("Current volume: " + smartTv.volume);
 
       smartTv.on();
       System.out.println("New status -> TV on? " + smartTv.on);
@@ -14,7 +14,7 @@ public class User {
       smartTv.decreaseVolume();
       smartTv.increaseVolume();
 
-      System.out.println("Volume atual: " + smartTv.volume);
+      System.out.println("Current volume: " + smartTv.volume);
 
       System.out.println("Current channel: " + smartTv.channel);
 
