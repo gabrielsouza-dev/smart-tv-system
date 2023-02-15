@@ -9,12 +9,12 @@ public class SmartTv {
     }
 
     public void increaseVolume(){
-      System.out.println("Aumentando o volume para: " + volume);
+      System.out.println("Increasing the volume to: " + volume);
       volume ++;
     }
 
     public void decreaseVolume(){
-      System.out.println("Diminuindo o volume para: " + volume);
+      System.out.println("Decreasing the volume to: " + volume);
       volume --;
     }
   

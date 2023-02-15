@@ -2,27 +2,27 @@ public class User {
     public static void main(String[] args) throws Exception {
       SmartTv smartTv = new SmartTv();
 
-      System.out.println("TV Ligada? " + smartTv.ligada);
-      System.out.println("Canal atual: " + smartTv.canal);
+      System.out.println("TV on? " + smartTv.on);
+      System.out.println("Current channel: " + smartTv.channel);
       System.out.println("Volume atual: " + smartTv.volume);
 
-      smartTv.ligar();
-      System.out.println("Novo Status -> TV Ligada? " + smartTv.ligada);
+      smartTv.on();
+      System.out.println("New status -> TV on? " + smartTv.on);
 
-      smartTv.diminuirVolume();
-      smartTv.diminuirVolume();
-      smartTv.diminuirVolume();
-      smartTv.aumentarVolume();
+      smartTv.decreaseVolume();
+      smartTv.decreaseVolume();
+      smartTv.decreaseVolume();
+      smartTv.increaseVolume();
 
       System.out.println("Volume atual: " + smartTv.volume);
 
-      System.out.println("Canal atual: " + smartTv.canal);
+      System.out.println("Current channel: " + smartTv.channel);
 
-      smartTv.mudarCanal(13);
+      smartTv.changeChannel(13);
       
-      System.out.println("Canal atual: " + smartTv.canal);
+      System.out.println("Current channel: " + smartTv.channel);
 
-      smartTv.desligar();
-      System.out.println("Novo Status -> TV Ligada? " + smartTv.ligada);
+      smartTv.turnOff();
+      System.out.println("New status -> TV on? " + smartTv.on);
     }
 }
